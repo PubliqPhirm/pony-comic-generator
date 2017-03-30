@@ -93,6 +93,9 @@ class Logger(object):
 		self.terminal = sys.stdout
 		self.log = open("log.txt", "w")
 
+	def flush(self):
+		pass
+
 	def write(self, message):
 		self.terminal.write(message)
 		self.log.write(message)
@@ -350,7 +353,7 @@ def selectBackground(seed, specifiedBackground=None):
 # namelist is an output variable
 # returns the number largest number of lines in a row a single nick says
 def processLines(file, namelist):
-	
+
 	lines = []
 	for line in file:
 		newline = utilFunctions.cleanupline(
