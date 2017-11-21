@@ -6,6 +6,9 @@ temp.png
 temp.jpg
 log.txt
 
+testSystem/testResults/*
+
+
 # Mac files
 .trashes
 .DS_Store
